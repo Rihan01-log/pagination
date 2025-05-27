@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:task/model/productmodel.dart';
 
 class Productservice {
-  final baseUrl = 'https://dummyjson.com/products';
+  final baseUrl = 'https://dummyjson.com/products'; 
   Dio dio = Dio();
 
   Future<List<Product>> fetchData({int limit = 10, int skip = 0}) async {

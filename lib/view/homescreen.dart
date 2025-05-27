@@ -99,7 +99,7 @@ class _HomescreenState extends State<Homescreen> {
 
                                 Text(
                                   'Price: ${product.price.toString()}',
-                                  style: const TextStyle(
+                                  style:  TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
