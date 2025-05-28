@@ -36,6 +36,7 @@ class _HomescreenState extends State<Homescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Product')),
+
       body: Consumer<Productcont>(
         builder: (context, value, child) {
           int totalPages = (value.products.length / 8).ceil();
@@ -99,9 +100,7 @@ class _HomescreenState extends State<Homescreen> {
 
                                 Text(
                                   'Price: ${product.price.toString()}',
-                                  style:  TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   product.description!,
